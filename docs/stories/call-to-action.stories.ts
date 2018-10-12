@@ -21,21 +21,19 @@ buttonStories.add('Button', () => {
     const toggles = {
         ...generateKnobs(propTypes),
         onclick: action('click'),
-        onmouseover: action('mouseover'),
     }
        return {
         title: `Button`,
         subtitle: `exo-button`,
-        content: `A wiki is run using wiki software, otherwise known as a wiki engine. A wiki engine is a type of content management system, but it differs
-        from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little inherent structure,`,
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore`,
         properties: propTypes,
+        exampleAreaClass: toggles.theme,
         example: html`
             <exo-button
             theme="${toggles.theme}"
             emphasis="${toggles.emphasis}"
             ${toggles.disabled}
             onclick="${toggles.onclick}"
-            onmouseover="${toggles.onmouseover}"
             />
             ${toggles.label}
             </exo-button>
@@ -53,14 +51,13 @@ buttonStories.add('Button with Icon', () => {
     const toggles = {
         ...generateKnobs(propTypes),
         onclick: action('click'),
-        onmouseover: action('mouseover'),
     }
     return {
         title: `Button with Icon`,
         subtitle: `exo-button`,
-        content: `A wiki is run using wiki software, otherwise known as a wiki engine. A wiki engine is a type of content management system, but it differs
-        from most other such systems, including blog software, in that the content is created without any defined owner or leader, and wikis have little inherent structure,`,
+        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore`,
         properties: propTypes,
+        exampleAreaClass: toggles.theme,
         example: html`
             <exo-button
             theme="${toggles.theme}"
@@ -68,7 +65,6 @@ buttonStories.add('Button with Icon', () => {
             icon="${toggles.icon}"
             ${toggles.disabled}
             onclick="${toggles.onclick}"
-            onmouseover="${toggles.onmouseover}"
             />
             ${toggles.label}
             </exo-button>

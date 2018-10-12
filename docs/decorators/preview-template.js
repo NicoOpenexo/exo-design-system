@@ -65,6 +65,10 @@ export function PreviewTemplateDecorator(storyFn) {
     left: 10px;
     text-transform: Capitalize;
     font-family: monospace;
+    color: #000;
+  }
+  .dark sub {
+    color: #fff;
   }
     .card {
       position: relative;
@@ -114,7 +118,7 @@ export function PreviewTemplateDecorator(storyFn) {
     <h1>${storyInfo.title}</h1>
   </header>
   <p class="content">${storyInfo.content}</p>
-  <div class="card">
+  <div class="card ${storyInfo.exampleAreaClass}">
     <sub>live example</sub>
       ${tag}
     </div>
