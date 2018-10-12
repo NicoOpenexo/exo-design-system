@@ -1,1 +1,2 @@
-import 'src/components/button/button';
+import 'src/shadycss';
+import 'src/components/button/button'
