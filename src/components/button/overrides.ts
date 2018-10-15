@@ -1,7 +1,6 @@
 import { html } from '@polymer/lit-element/lit-element.js';
 export function overrides(themeVariables ) {
   return html`
-  <custom-style>
 <style>
     .mdc-button:not(:disabled),
     .mdc-button--raised,
@@ -34,6 +33,5 @@ export function overrides(themeVariables ) {
       font-size: var(--mdc-icon-size, 24px);
     }
  </style>
- </custom-style>
 `;
   }
